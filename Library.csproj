@@ -1,0 +1,819 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F93B04C5-3C3E-45FA-902E-9368703A087D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Library</RootNamespace>
+    <AssemblyName>Library</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about us.html" />
+    <Content Include="add author.html" />
+    <Content Include="add book.html" />
+    <Content Include="AdminControl\Manage_Auther.ascx" />
+    <Content Include="AdminControl\Manage_Book.ascx" />
+    <Content Include="AdminControl\Manage_Category.ascx" />
+    <Content Include="AdminControl\Manage_Comments.ascx" />
+    <Content Include="AdminControl\Manage_ContactUs.ascx" />
+    <Content Include="AdminControl\Manage_Publisher.ascx" />
+    <Content Include="AdminControl\Manage_Role_State.ascx" />
+    <Content Include="AdminControl\Manage_Role_User.ascx" />
+    <Content Include="AdminControl\Manage_State.ascx" />
+    <Content Include="AdminControl\Manage_SubCategory.ascx" />
+    <Content Include="AdminControl\Manage_User.ascx" />
+    <Content Include="AdminPages\ContactUS.aspx" />
+    <Content Include="AdminPages\Manage_Auther.aspx" />
+    <Content Include="AdminPages\Manage_Book.aspx" />
+    <Content Include="AdminPages\Manage_Category.aspx" />
+    <Content Include="AdminPages\Manage_Comments.aspx" />
+    <Content Include="AdminPages\Manage_Publisher.aspx" />
+    <Content Include="AdminPages\Manage_SubCategory.aspx" />
+    <Content Include="AdminPages\Manage_User.aspx" />
+    <Content Include="AdminPages\Manage_Role_State.aspx" />
+    <Content Include="AdminPages\Manage_Role_User.aspx" />
+    <Content Include="AdminPages\Manage_State.aspx" />
+    <Content Include="AdminPages\Manage_User_Role.aspx" />
+    <Content Include="auther details.html" />
+    <Content Include="author.html" />
+    <Content Include="books details.html" />
+    <Content Include="books.html" />
+    <Content Include="contact us.html" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\component.css" />
+    <Content Include="css\default.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\hover-min.css" />
+    <Content Include="css\sb-admin.css" />
+    <Content Include="css\Slider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\000-Front-Cover-q75-350x500.jpg" />
+    <Content Include="images\0553212583_b.jpg" />
+    <Content Include="images\1320439258-student-support-at-rasmussen-college.jpg" />
+    <Content Include="images\14079594_1789483577940570_6290170469259171472_n.jpg" />
+    <Content Include="images\14142027_1789483561273905_9085400698950374590_n.jpg" />
+    <Content Include="images\51afVZgI45L._SY346_.jpg" />
+    <Content Include="images\593cc2b5127627eeb92766ff669b0d11.jpg" />
+    <Content Include="images\7293c3cff8be60ac4f822be2af727a435159ccc1.png" />
+    <Content Include="images\about-img2.png" />
+    <Content Include="images\author-detail.jpg" />
+    <Content Include="images\author.png" />
+    <Content Include="images\author2.png" />
+    <Content Include="images\author3.png" />
+    <Content Include="images\author_pic1.png" />
+    <Content Include="images\author_pic2.png" />
+    <Content Include="images\author_pic3.png" />
+    <Content Include="images\author_pic4.png" />
+    <Content Include="images\bannar.jpg" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\banner.png" />
+    <Content Include="images\banner3.jpg" />
+    <Content Include="images\Battle-of-The-Two-Talmunds-Book-Cover.jpg" />
+    <Content Include="images\book-detail.jpg" />
+    <Content Include="images\Capture.JPG" />
+    <Content Include="images\category.jpg" />
+    <Content Include="images\category2.jpg" />
+    <Content Include="images\category3.jpg" />
+    <Content Include="images\category4.jpg" />
+    <Content Include="images\category5.jpg" />
+    <Content Include="images\category6.jpg" />
+    <Content Include="images\category7.jpg" />
+    <Content Include="images\category8.jpg" />
+    <Content Include="images\Emily Bronte .wutbering heights.jpg" />
+    <Content Include="images\Emily Bronte.achainless soul.jpg" />
+    <Content Include="images\f1.jpg" />
+    <Content Include="images\foto-students.jpg" />
+    <Content Include="images\Harper lee. To Kill a Mockingbird.jpg" />
+    <Content Include="images\images.jpg" />
+    <Content Include="images\img-banner.jpg" />
+    <Content Include="images\Jack Kerouac.books of dreams.gif" />
+    <Content Include="images\logo-pic.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\Mark_Twain.jpg" />
+    <Content Include="images\new-release-3.png" />
+    <Content Include="images\new-release-4.png" />
+    <Content Include="images\new-release.png" />
+    <Content Include="images\OnlineLearning.jpg" />
+    <Content Include="images\page1_pic1.jpg" />
+    <Content Include="images\page1_pic2.jpg" />
+    <Content Include="images\page1_pic3.jpg" />
+    <Content Include="images\page1_pic4.jpg" />
+    <Content Include="images\page1_pic4.png" />
+    <Content Include="images\page1_pic5.jpg" />
+    <Content Include="images\page1_pic6.jpg" />
+    <Content Include="images\page1_pic7.jpg" />
+    <Content Include="images\page1_pic8.jpg" />
+    <Content Include="images\picture2.jpg" />
+    <Content Include="images\picture3.jpg" />
+    <Content Include="images\picture4.jpg" />
+    <Content Include="images\picture4.png" />
+    <Content Include="images\preview.png" />
+    <Content Include="images\shakespeare.jpg" />
+    <Content Include="images\signature-1.png" />
+    <Content Include="images\slider 1-img3.png" />
+    <Content Include="images\slider2-img5.png" />
+    <Content Include="images\slider3-img4.png" />
+    <Content Include="images\tabs-imgs.png" />
+    <Content Include="images\tc_01.jpg" />
+    <Content Include="images\testimonials-img4.png" />
+    <Content Include="images\testimonials1.png" />
+    <Content Include="images\th %281%29.jpg" />
+    <Content Include="images\th-%282%29.png" />
+    <Content Include="images\th-%283%29.png" />
+    <Content Include="images\th.jpg" />
+    <Content Include="images\Thomas Hardy.the return of the native.jpg" />
+    <Content Include="images\Thomas Hardy.thomas hardy.jpg" />
+    <Content Include="images\unnamed.png" />
+    <Content Include="images\Untitled-1.png" />
+    <Content Include="images\william_shakespeare-472108.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\modernizr.custom.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\toucheffects.js" />
+    <Content Include="master page.html" />
+    <Content Include="posts.html" />
+    <Content Include="profile.html" />
+    <Content Include="profile2.html" />
+    <Content Include="profile_edit.html" />
+    <Content Include="publishers.html" />
+    <Content Include="register.html" />
+    <Content Include="sub category.html" />
+    <Content Include="UserControls\Author.ascx" />
+    <Content Include="UserControls\AuthorDetails.ascx" />
+    <Content Include="UserControls\Book.ascx" />
+    <Content Include="UserControls\Book_Details.ascx" />
+    <Content Include="UserControls\Book_Show.ascx" />
+    <Content Include="UserControls\Contact_Us_Control.ascx" />
+    <Content Include="UserControls\CtrlAddBook.ascx" />
+    <Content Include="UserControls\ctrlAuther.ascx" />
+    <Content Include="UserControls\ctrlProfilPage.ascx" />
+    <Content Include="UserControls\Ctrl_Category.ascx" />
+    <Content Include="UserControls\Home.ascx" />
+    <Content Include="UserControls\Login_Control.ascx" />
+    <Content Include="UserControls\Profile.ascx" />
+    <Content Include="UserControls\Puplisher.ascx" />
+    <Content Include="UserControls\Puplisher_Detials.ascx" />
+    <Content Include="UserControls\Register.ascx" />
+    <Content Include="UserControls\Search_box.ascx" />
+    <Content Include="UserControls\Search_result.ascx" />
+    <Content Include="UserControls\Subcategory_Details.ascx" />
+    <Content Include="UserControls\AddAuther.ascx" />
+    <Content Include="UserControls\Subcategory_show.ascx" />
+    <Content Include="UserPages\About_US.aspx" />
+    <Content Include="UserPages\Add Auther.aspx" />
+    <Content Include="UserPages\Auther Details.aspx" />
+    <Content Include="UserPages\Book.aspx" />
+    <Content Include="UserPages\Book_Details.aspx" />
+    <Content Include="UserPages\Book_Show.aspx" />
+    <Content Include="UserPages\Contact_Us.aspx" />
+    <Content Include="UserPages\Home.aspx" />
+    <Content Include="UserPages\Home_Without_Master.aspx" />
+    <Content Include="UserPages\Login.aspx" />
+    <Content Include="UserPages\ManageAddBook.aspx" />
+    <Content Include="UserPages\manageProfile.aspx" />
+    <Content Include="UserPages\manage_Auther.aspx" />
+    <Content Include="UserPages\Manage_Contact_Us.aspx" />
+    <Content Include="UserPages\Puplisher.aspx" />
+    <Content Include="UserPages\Puplisher_Details.aspx" />
+    <Content Include="UserPages\Register_Page.aspx" />
+    <Content Include="UserPages\Search_Result.aspx" />
+    <Content Include="UserPages\Subcategory_Details.aspx" />
+    <Content Include="UserPages\Subcategory_show.aspx" />
+    <Content Include="UserPages\test.aspx" />
+    <Content Include="UserPages\WebForm1.aspx" />
+    <Content Include="Users Pictures\Books.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminControl\Manage_Auther.ascx.cs">
+      <DependentUpon>Manage_Auther.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminControl\Manage_Auther.ascx.designer.cs">
+      <DependentUpon>Manage_Auther.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControl\Manage_Book.ascx.cs">
+      <DependentUpon>Manage_Book.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminControl\Manage_Book.ascx.designer.cs">
+      <DependentUpon>Manage_Book.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControl\Manage_Category.ascx.cs">
+      <DependentUpon>Manage_Category.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminControl\Manage_Category.ascx.designer.cs">
+      <DependentUpon>Manage_Category.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControl\Manage_Comments.ascx.cs">
+      <DependentUpon>Manage_Comments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminControl\Manage_Comments.ascx.designer.cs">
+      <DependentUpon>Manage_Comments.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControl\Manage_ContactUs.ascx.cs">
+      <DependentUpon>Manage_ContactUs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminControl\Manage_ContactUs.ascx.designer.cs">
+      <DependentUpon>Manage_ContactUs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControl\Manage_Publisher.ascx.cs">
+      <DependentUpon>Manage_Publisher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminControl\Manage_Publisher.ascx.designer.cs">
+      <DependentUpon>Manage_Publisher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControl\Manage_Role_State.ascx.cs">
+      <DependentUpon>Manage_Role_State.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminControl\Manage_Role_State.ascx.designer.cs">
+      <DependentUpon>Manage_Role_State.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControl\Manage_Role_User.ascx.cs">
+      <DependentUpon>Manage_Role_User.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminControl\Manage_Role_User.ascx.designer.cs">
+      <DependentUpon>Manage_Role_User.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControl\Manage_State.ascx.cs">
+      <DependentUpon>Manage_State.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminControl\Manage_State.ascx.designer.cs">
+      <DependentUpon>Manage_State.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControl\Manage_SubCategory.ascx.cs">
+      <DependentUpon>Manage_SubCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminControl\Manage_SubCategory.ascx.designer.cs">
+      <DependentUpon>Manage_SubCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControl\Manage_User.ascx.cs">
+      <DependentUpon>Manage_User.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminControl\Manage_User.ascx.designer.cs">
+      <DependentUpon>Manage_User.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\ContactUS.aspx.cs">
+      <DependentUpon>ContactUS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\ContactUS.aspx.designer.cs">
+      <DependentUpon>ContactUS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Auther.aspx.cs">
+      <DependentUpon>Manage_Auther.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Auther.aspx.designer.cs">
+      <DependentUpon>Manage_Auther.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Book.aspx.cs">
+      <DependentUpon>Manage_Book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Book.aspx.designer.cs">
+      <DependentUpon>Manage_Book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Category.aspx.cs">
+      <DependentUpon>Manage_Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Category.aspx.designer.cs">
+      <DependentUpon>Manage_Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Comments.aspx.cs">
+      <DependentUpon>Manage_Comments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Comments.aspx.designer.cs">
+      <DependentUpon>Manage_Comments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Publisher.aspx.cs">
+      <DependentUpon>Manage_Publisher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Publisher.aspx.designer.cs">
+      <DependentUpon>Manage_Publisher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Manage_SubCategory.aspx.cs">
+      <DependentUpon>Manage_SubCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Manage_SubCategory.aspx.designer.cs">
+      <DependentUpon>Manage_SubCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Manage_User.aspx.cs">
+      <DependentUpon>Manage_User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Manage_User.aspx.designer.cs">
+      <DependentUpon>Manage_User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Role_State.aspx.cs">
+      <DependentUpon>Manage_Role_State.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Role_State.aspx.designer.cs">
+      <DependentUpon>Manage_Role_State.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Role_User.aspx.cs">
+      <DependentUpon>Manage_Role_User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Manage_Role_User.aspx.designer.cs">
+      <DependentUpon>Manage_Role_User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Manage_State.aspx.cs">
+      <DependentUpon>Manage_State.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Manage_State.aspx.designer.cs">
+      <DependentUpon>Manage_State.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Manage_User_Role.aspx.cs">
+      <DependentUpon>Manage_User_Role.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Manage_User_Role.aspx.designer.cs">
+      <DependentUpon>Manage_User_Role.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPages\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPages\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dal\AutherDal.cs" />
+    <Compile Include="Dal\BookDal.cs" />
+    <Compile Include="Dal\CategoryDal.cs" />
+    <Compile Include="Dal\CommentsDal.cs" />
+    <Compile Include="Dal\Contact_Us_Dal.cs" />
+    <Compile Include="Dal\PublisherDal.cs" />
+    <Compile Include="Dal\StateDal.cs" />
+    <Compile Include="Dal\Role_UserDal.cs" />
+    <Compile Include="Dal\Role_StateDal.cs" />
+    <Compile Include="Dal\Subcategory_Dal.cs" />
+    <Compile Include="Dal\UserDal.cs" />
+    <Compile Include="Data\Auther.cs" />
+    <Compile Include="Data\Book.cs" />
+    <Compile Include="Data\Category.cs" />
+    <Compile Include="Data\Comments.cs" />
+    <Compile Include="Data\Contact_Us.cs" />
+    <Compile Include="Data\Publisher.cs" />
+    <Compile Include="Data\State.cs" />
+    <Compile Include="Data\Role_User.cs" />
+    <Compile Include="Data\Role_State.cs" />
+    <Compile Include="Data\Subcategory.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\Author.ascx.cs">
+      <DependentUpon>Author.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Author.ascx.designer.cs">
+      <DependentUpon>Author.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AuthorDetails.ascx.cs">
+      <DependentUpon>AuthorDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AuthorDetails.ascx.designer.cs">
+      <DependentUpon>AuthorDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Book.ascx.cs">
+      <DependentUpon>Book.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Book.ascx.designer.cs">
+      <DependentUpon>Book.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Book_Details.ascx.cs">
+      <DependentUpon>Book_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Book_Details.ascx.designer.cs">
+      <DependentUpon>Book_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Book_Show.ascx.cs">
+      <DependentUpon>Book_Show.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Book_Show.ascx.designer.cs">
+      <DependentUpon>Book_Show.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Contact_Us_Control.ascx.cs">
+      <DependentUpon>Contact_Us_Control.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Contact_Us_Control.ascx.designer.cs">
+      <DependentUpon>Contact_Us_Control.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CtrlAddBook.ascx.cs">
+      <DependentUpon>CtrlAddBook.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CtrlAddBook.ascx.designer.cs">
+      <DependentUpon>CtrlAddBook.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ctrlAuther.ascx.cs">
+      <DependentUpon>ctrlAuther.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ctrlAuther.ascx.designer.cs">
+      <DependentUpon>ctrlAuther.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ctrlProfilPage.ascx.cs">
+      <DependentUpon>ctrlProfilPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ctrlProfilPage.ascx.designer.cs">
+      <DependentUpon>ctrlProfilPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Ctrl_Category.ascx.cs">
+      <DependentUpon>Ctrl_Category.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Ctrl_Category.ascx.designer.cs">
+      <DependentUpon>Ctrl_Category.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Home.ascx.cs">
+      <DependentUpon>Home.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Home.ascx.designer.cs">
+      <DependentUpon>Home.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Login_Control.ascx.cs">
+      <DependentUpon>Login_Control.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Login_Control.ascx.designer.cs">
+      <DependentUpon>Login_Control.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Profile.ascx.cs">
+      <DependentUpon>Profile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Profile.ascx.designer.cs">
+      <DependentUpon>Profile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Puplisher.ascx.cs">
+      <DependentUpon>Puplisher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Puplisher.ascx.designer.cs">
+      <DependentUpon>Puplisher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Puplisher_Detials.ascx.cs">
+      <DependentUpon>Puplisher_Detials.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Puplisher_Detials.ascx.designer.cs">
+      <DependentUpon>Puplisher_Detials.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Register.ascx.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Register.ascx.designer.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Search_box.ascx.cs">
+      <DependentUpon>Search_box.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Search_box.ascx.designer.cs">
+      <DependentUpon>Search_box.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Search_result.ascx.cs">
+      <DependentUpon>Search_result.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Search_result.ascx.designer.cs">
+      <DependentUpon>Search_result.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Subcategory_Details.ascx.cs">
+      <DependentUpon>Subcategory_Details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Subcategory_Details.ascx.designer.cs">
+      <DependentUpon>Subcategory_Details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AddAuther.ascx.cs">
+      <DependentUpon>AddAuther.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AddAuther.ascx.designer.cs">
+      <DependentUpon>AddAuther.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Subcategory_show.ascx.cs">
+      <DependentUpon>Subcategory_show.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Subcategory_show.ascx.designer.cs">
+      <DependentUpon>Subcategory_show.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\About_US.aspx.cs">
+      <DependentUpon>About_US.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\About_US.aspx.designer.cs">
+      <DependentUpon>About_US.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Add Auther.aspx.cs">
+      <DependentUpon>Add Auther.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Add Auther.aspx.designer.cs">
+      <DependentUpon>Add Auther.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Auther Details.aspx.cs">
+      <DependentUpon>Auther Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Auther Details.aspx.designer.cs">
+      <DependentUpon>Auther Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Book.aspx.cs">
+      <DependentUpon>Book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Book.aspx.designer.cs">
+      <DependentUpon>Book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Book_Details.aspx.cs">
+      <DependentUpon>Book_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Book_Details.aspx.designer.cs">
+      <DependentUpon>Book_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Book_Show.aspx.cs">
+      <DependentUpon>Book_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Book_Show.aspx.designer.cs">
+      <DependentUpon>Book_Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Contact_Us.aspx.cs">
+      <DependentUpon>Contact_Us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Contact_Us.aspx.designer.cs">
+      <DependentUpon>Contact_Us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Home_Without_Master.aspx.cs">
+      <DependentUpon>Home_Without_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Home_Without_Master.aspx.designer.cs">
+      <DependentUpon>Home_Without_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\ManageAddBook.aspx.cs">
+      <DependentUpon>ManageAddBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\ManageAddBook.aspx.designer.cs">
+      <DependentUpon>ManageAddBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\manageProfile.aspx.cs">
+      <DependentUpon>manageProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\manageProfile.aspx.designer.cs">
+      <DependentUpon>manageProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\manage_Auther.aspx.cs">
+      <DependentUpon>manage_Auther.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\manage_Auther.aspx.designer.cs">
+      <DependentUpon>manage_Auther.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Manage_Contact_Us.aspx.cs">
+      <DependentUpon>Manage_Contact_Us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Manage_Contact_Us.aspx.designer.cs">
+      <DependentUpon>Manage_Contact_Us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Puplisher.aspx.cs">
+      <DependentUpon>Puplisher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Puplisher.aspx.designer.cs">
+      <DependentUpon>Puplisher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Puplisher_Details.aspx.cs">
+      <DependentUpon>Puplisher_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Puplisher_Details.aspx.designer.cs">
+      <DependentUpon>Puplisher_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Register_Page.aspx.cs">
+      <DependentUpon>Register_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Register_Page.aspx.designer.cs">
+      <DependentUpon>Register_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Search_Result.aspx.cs">
+      <DependentUpon>Search_Result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Search_Result.aspx.designer.cs">
+      <DependentUpon>Search_Result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Subcategory_Details.aspx.cs">
+      <DependentUpon>Subcategory_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Subcategory_Details.aspx.designer.cs">
+      <DependentUpon>Subcategory_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\Subcategory_show.aspx.cs">
+      <DependentUpon>Subcategory_show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\Subcategory_show.aspx.designer.cs">
+      <DependentUpon>Subcategory_show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPages\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPages\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminPages\Site1.Master" />
+    <Content Include="UserPages\Site1.Master" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pics\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3101/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
